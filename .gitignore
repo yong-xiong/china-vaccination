@@ -9,3 +9,5 @@ vaccine_daily_update.ipynb
 
 #Ignore the folder "Ignore"
 Ignore/
+.ipynb_checkpoints
+vaccine_daily_update.ipynb
