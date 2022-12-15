@@ -6,3 +6,6 @@ data.csv
 date_url_list.ipynb
 links.csv
 vaccine_daily_update.ipynb
+
+#Ignore the folder "Ignore"
+Ignore/
