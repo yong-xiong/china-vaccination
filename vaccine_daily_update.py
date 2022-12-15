@@ -24,7 +24,7 @@ for i in range(1, 100000):
     soup = BeautifulSoup(response.text, 'html.parser')
 
     links = soup.find_all('li')
-    max_date = datetime.date(2020, 12, 1)
+    max_date = latest_date_org
     max_date_link = ''
     for i in links:
         if '新冠病毒疫苗接种情况' in i.text:
