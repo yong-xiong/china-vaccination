@@ -17,7 +17,7 @@ jobs:
     - name: Install all necessary packages
       run: pip install jupyter lxml pandas requests beautifulsoup4
     - name: Run the scraping script
-      run: jupyter nbconvert --to notebook --execute "vaccine_daily_update.py" --stdout
+      run: --execute "vaccine_daily_update.py" --stdout
     - name: Commit and push any changes
       run: |-
         git config user.name "Automated"
