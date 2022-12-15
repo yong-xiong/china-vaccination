@@ -1,2 +1,2 @@
 # china-vaccination
-Scrap vaccination data from China's National Health Commission
+Scraping daily vaccination data from China's National Health Commission
