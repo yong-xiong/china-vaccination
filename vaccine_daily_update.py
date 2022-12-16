@@ -73,7 +73,7 @@ if max_date > latest_date_org:
 else:
     print('No new data')
 
-#getting the data in the past 90 days
+#getting the data in the past 180 days
 df = pd.read_csv('daily_update.csv', index_col=0, parse_dates=True, names = ['date', 'vaccine_num_total', 'vaccine_num_daily', 'link'])
 df = df.iloc[1:]
 df['date'] = pd.to_datetime(df['date'])
@@ -82,7 +82,7 @@ df['vaccine_num_total'] = df['vaccine_num_total'].astype(int)
 df['vaccine_num_daily'] = df['vaccine_num_daily'].astype(int)
 
 latest_date_org = df['date'].max()
-date_munuse_180 = latest_date_org + datetime.timedelta(days=-180)
-df = df[df['date'] >= date_munuse_180]
+date_minus_180 = latest_date_org + datetime.timedelta(days=-180)
+df = df[df['date'] >= date_minus_180]
 
 df.to_csv('daily_update_180days.csv')
